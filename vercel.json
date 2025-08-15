@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "packages/evershop/dist/bin/start/index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "packages/evershop/dist/bin/start/index.js" }
+  ]
+}
